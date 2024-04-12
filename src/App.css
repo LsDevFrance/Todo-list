@@ -8,6 +8,10 @@
   flex-direction: column;
 }
 
+.header-logo {
+  width: 300px;
+}
+
 .header-input {
   padding-inline: 1rem;
   position: absolute;

@@ -23,8 +23,11 @@ export const Header = () => {
 
   return (
     <header className="header">
+      {/* <div className="navbar">
+        <Profile />
+      </div> */}
       <div>
-        <img src={Logo} alt="logo" />
+        <img className="header-logo" src={Logo} alt="logo" />
       </div>
       <div className="header-input">
         <Input

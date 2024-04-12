@@ -2,6 +2,7 @@ import { createContext, useState } from "react";
 
 export const TasksContext = createContext({
   tasks: [],
+  setTasks: () => {},
   AddTask: () => {},
   DeleteTask: () => {},
   CompletTask: () => {},
@@ -42,6 +43,7 @@ export const TasksContextProvider = ({ children }) => {
 
   const tasksCtx = {
     tasks: tasks,
+    setTasks: setTasks,
     AddTask: handleAddTask,
     DeleteTask: handleDeleteTask,
     CompletTask: handleCompletTask,
